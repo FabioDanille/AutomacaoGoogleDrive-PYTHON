@@ -1,0 +1,21 @@
+import pyautogui
+import time
+pyautogui.alert("O código irá começar, não use seu computador enquanto o código está rodando")
+pyautogui.PAUSE = 0.5
+pyautogui.press('win')
+pyautogui.write('edge')
+time.sleep(1)
+pyautogui.press('enter')
+time.sleep(3)
+pyautogui.write('https://drive.google.com/drive/my-drive')
+time.sleep(1)
+pyautogui.press('enter')
+pyautogui.hotkey('win', 'd')
+pyautogui.moveTo(x=1847, y=47)
+pyautogui.mouseDown()
+pyautogui.moveTo(x=450, y=968)
+pyautogui.hotkey('alt', 'tab')
+time.sleep(3)
+pyautogui.mouseUp()
+time.sleep(5)
+pyautogui.alert("O código está finalizado. Pode usar o computador novamente")
